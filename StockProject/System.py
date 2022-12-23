@@ -7,7 +7,6 @@ class System:
     def __init__(self):
         self.allStockList = []
         self.articleData = None
-        self.__api_key = "QW598x36qJi8dFTfT4dwHPmGkJGsxbHt"
         self.pastArticleNum = 30
         self.pastArticleTime = 5
 
