@@ -47,7 +47,7 @@ $$\sum_{i=1}^{d} t_i \times \log_{10}(\frac{d}{1+d_t})$$
 
 where the variables are as follows:
 
-$$t = \text{term} \\t_i = \text{term frequency of } t \text{ for document } i\\d = \text{total number of documents} \\d_t = \text{number of documents containing } t$$ 
+$$t = \text{term} \\ t_i = \text{term frequency of } t \text{ for document } i\\ d = \text{total number of documents} \\ d_t = \text{number of documents containing } t$$ 
 
 Here, each "document" refers to individual stocks; thus, multiple word frequencies across all articles relevant to a certain stock are combined to form the term frequency for each word.  
 
