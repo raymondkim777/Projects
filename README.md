@@ -46,12 +46,9 @@ The equation for tf-idf is
 $$\sum_{i=1}^{d} t_i \times \log_{10}(\frac{d}{1+d_t})$$
 
 where the variables are as follows:
-$$t = \text{term} \\
-t_i = \text{term frequency of } t \text{ for document } i\\
-d = \text{total number of documents} \\
-d_t = \text{number of documents containing } t$$ 
-  
-\\
+
+$$t = \text{term} \\t_i = \text{term frequency of } t \text{ for document } i\\d = \text{total number of documents} \\d_t = \text{number of documents containing } t$$ 
+
 Here, each "document" refers to individual stocks; thus, multiple word frequencies across all articles relevant to a certain stock are combined to form the term frequency for each word.  
 
 However, even though the term frequency may be high, its importance may not be. This is determined by how often the term presents itself throughout multiple documents — a term with both a high term frequency and high document frequency is likely unimportant and can be disregarded, whereas a term with a high term frequency within a certain document but low document frequency is likely important, and thus should be considered a keyword for that document.  
