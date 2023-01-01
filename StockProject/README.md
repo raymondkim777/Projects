@@ -69,4 +69,4 @@ Comparing every word in $S_1$ with every word in $S_2$ yields a correlation valu
 The correlation value between two words will be computed with the library Spacy, using the vector space model "en_vectors_web_lg". 
 
 ## Reference  
-Christopher D. Manning et al., 2008, Introduction to Information Retrieval (8th Edition)
+- Christopher D. Manning et al., 2008, Introduction to Information Retrieval (8th Edition)
