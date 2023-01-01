@@ -6,8 +6,8 @@ This program predicts future stock movements primarily based on news article ana
 September 3, 2022 - Ongoing 
 
 ## Development Environment  
--'Python 3.10'  
--'Database: SQLite'
+- 'Python 3.10'  
+- 'Database: SQLite'
 
 ## Core Features  
 
@@ -15,9 +15,9 @@ September 3, 2022 - Ongoing
 Our objective is to retrieve relevant article information from online news sources and process them with NLP.  
 
 Libraries used: selenium, bs4, nltk  
-&nbsp;&nbsp;&nbsp;&nbsp; selenium: Library used to control web browser (Google Chrome). Controls browser through webdriver with chromedriver.exe separately downloaded.  
-&nbsp;&nbsp;&nbsp;&nbsp; bs4: Library used to access html code & retrieve tags. Used for each Google page to retrieve article links. Used for each article link to retrieve article text.  
-&nbsp;&nbsp;&nbsp;&nbsp; nltk: Library used for natural language processing. After manually removing stopwords, each remaining word's parts of speech is found via pos_tag & words are reverted to their roots via WordNetLemmatizer.  
+- selenium: Library used to control web browser (Google Chrome). Controls browser through webdriver with chromedriver.exe separately downloaded.  
+- bs4: Library used to access html code & retrieve tags. Used for each Google page to retrieve article links. Used for each article link to retrieve article text.  
+- nltk: Library used for natural language processing. After manually removing stopwords, each remaining word's parts of speech is found via pos_tag & words are reverted to their roots via WordNetLemmatizer.  
 
 The program uses Chrome to search Google with the query "(*company name*) company (*source*)", where (*source*) refers to the news source used (in this case, The Guardian). 10 Google search results pages and their html codes are used to extract and save all new links from the news source (if the link already exists in the database or is not from the news source, the program continues). Each article link is then individually accessed and its html code is used to extract the article's main text.  
 
@@ -32,10 +32,10 @@ added to the SQL Database for each article.
 SQL Database "article_database" is used to store parsed article information for later access & analysis.
 
 Table: Articles  
-&nbsp;&nbsp;&nbsp;&nbsp; Columns (3): Article_ID, Word_Frequency, Stocks  
-&nbsp;&nbsp;&nbsp;&nbsp; Article_ID: Stores article links, used as unique ID for that article's information  
-&nbsp;&nbsp;&nbsp;&nbsp; Word_Frequency: Stores document frequency of each word in string format --> (*word1*, *frequency1*), (*word2*, *frequency2*),...  
-&nbsp;&nbsp;&nbsp;&nbsp; Stocks: Stores relevant stocks included in article (as multiple companies can be mentioned in one article)
+- Columns (3): Article_ID, Word_Frequency, Stocks  
+- Article_ID: Stores article links, used as unique ID for that article's information  
+- Word_Frequency: Stores document frequency of each word in string format --> (*word1*, *frequency1*), (*word2*, *frequency2*),...  
+- Stocks: Stores relevant stocks included in article (as multiple companies can be mentioned in one article)
 
 ### TF-IDF ([System.py](System.py))  
 The objective of calculating the tf-idf of each word for each individual document is to quantify the relevant importance of each word for the document in respect to the overall collection of words across all documents. 
