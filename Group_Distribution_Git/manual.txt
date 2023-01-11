@@ -1,0 +1,53 @@
+Hello! This is the Python script for group distribution, created by 2022 G12 Vice President Raymond Kim.
+Both before and after running the code, the user has to input data. This manual will walk the user through the process.
+Please read everything in detail, as it is important.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+At the start of the code, there will be sections denoted by the following sign -> ***
+These denote the sections the user has to edit before running the code.
+
+*** INPUT DATA *** refers to student data.
+The user will define "student_list" as a list of all student names, in string format.
+The user will define "gender_dict" as a dictionary (hash table/map) of all students, in the following form: "student_name": "Male" or "student_name": "Female".
+
+*** PARAMETERS *** refer to parameters regarding the actual group generation.
+GROUP_CNT refers to the number of groups the user wants to create. The code will automatically distribute the students evenly into GROUP_CNT groups.
+GENDER_RATIO refers to the amount of deviation the user wants to allow the code to have for male-female ratio, in percent form.
+    The closer this value is to 0, the stricter the requirement for even male-female ratios, but the lower the likelihood of creating a successful group per iteration.
+ITERATION_CNT refers to the number of iterations the code will run, after which the code will display the best results.
+    Keep in mind that the user will probably have to run the code multiple times anyway, and too high of an iteration count has tendencies to produce unfavorable results.
+POS_EXCEPT_CNT refers to the number of student names each student is expected to write.
+    This number is not important for group generation, and only used for the average/median happiness calculations, where happiness for a student "A" refers to the number of student names that student “A” got fulfilled in their groups (AKA number of friends in their group).
+
+Please note that all student names should be constant, for both INPUT DATA and PARAMETERS.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+When the script is executed, a window labeled "Group Distribution Settings" will pop up. There will be two main sections.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The first section is where the user has to input different types of exceptions.
+1. "Positive Exceptions" refer to which student wants to be with which other student(s).
+This data should be inputted by copying & pasting two columns from a spreadsheet, with the first column being each student's name, and second column being a list of students separated by commas ", ".
+This can be achieved simply with a Google Form, with dropdowns for student names and checkboxes for desired friends.
+
+2. "Absolute Positive Exceptions" refer to pairs of students that must be put together, determined separately by the user.
+This should be inputted in the following string format: "student1_name, student2_name", with the two names separated by commas ", ".
+
+3. "Negative Exceptions" refer to pairs of students that must be separated, determined separately by the user.
+This should be inputted in the following string format: "student1_name, student2_name", with the two names separated by commas ", ".
+
+Clicking the "Update Exceptions" button will input the exceptions into the program. If any edit is desired, input new exceptions and click "Update Exceptions" again.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Underneath are two buttons, "Transfer Exceptions" and "Generate Groups". Transfer Exceptions is the process of transferring Tier 1 exceptions into Tier 0 (explained below).
+
+Positive Exceptions are categorized into two tiers. If Person A writes Person B but B does not write A, it is considered Tier 0. If two people write each other, it is considered Tier 1.
+The code prioritizes satisfying Tier 1 exceptions. However, if happiness is unfair, transferring some Tier 1s into Tier 0s increases the chances of more equal happiness distribution, but lower average happiness.
+It is up to the user whether to transfer, or how many exceptions to transfer at once. Transferred exceptions cannot be reversed, unless the exceptions are re-inputted.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+When generating groups, please allow some time for the iterations to occur. The time required will depend on the ITERATION_CNT defined above.
+At the end, the code will output the best group, determined by the least number of people with none of their written student names satisfied (zero_num).
+From personal experience, it is recommended for the user to run the code multiple times to get candidates with the lowest zero_num, and use the displayed values of average/median happiness and qualitative judgement to choose the best group.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Please keep in mind that this code is not perfect, nor was it ever intended to be. It is simply a method to increase the number of people who receive satisfactory groups.
+As with most community-based Python scripts, this is open-source, and anyone can feel free to edit and improve it in any way.
+I truly hope this script can be of help for both students and teachers alike.
+
+Sincerely,
+Raymond Kim :D
