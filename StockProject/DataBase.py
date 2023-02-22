@@ -22,7 +22,7 @@ class DataBase:
         self.conn = sqlite3.connect("ArticleDatabase.db")
         self.cur = self.conn.cursor()
 
-        self.articlePageNum = 10
+        self.articlePageNum = 8
         self.articleSources = ['theguardian']
 
         self.driver = webdriver.Chrome('chromedriver.exe')

@@ -5,6 +5,8 @@ class Stock:
 
         self.calculated = False
         self.tf_idf = dict()  # {word: tf_idf}
+        self.keywords = []  # [word1, word2, ...]
+        self.keywordRel = dict()  # {Stock: [[(word2_1) num, (word2_2) num, ...], [], [], ...]}
         self.RelSentimentScore = dict()  # {Stock: float}
 
         self.finalPublicSentiment = 0.0

@@ -2,7 +2,7 @@ AAPL, Apple
 ARAMCO, Saudi-Aramco
 AMZN, Amazon
 GOOGL, Alphabet
-INTC, Intel
+TWTR, Twitter
 T, AT&T
 ADBE, Adobe
 VZ, Verizon
