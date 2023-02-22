@@ -77,7 +77,7 @@ A visual display of the individual relations of keywords for two stocks can be s
   </p>
   <p align="center">
     Figure 1 - 3D bar graph plotting the 10 keywords for each stock on the x, y axes and the correlation score on the z axis
-  </p>
+  </p><br>
 </figure>
 
 The collective correlation values for all stocks will be visually displayed using Tkinter, with the GUI window split in half. The left half will display a graph of stocks as nodes and relations as edges, colored with green/red based on the stocks' correlation values. Selecting two stocks will update the right half, displaying a 3d bar graph of keyword relations similar to Figure 1. Such examples are displayed below in Figure 2.1 ~ 2.3. 
@@ -88,8 +88,7 @@ The collective correlation values for all stocks will be visually displayed usin
   </p>
   <p align="center">
     Figure 2.1 - Tkinter display for two stocks with high correlation
-  </p>
-  <br><br>
+  </p><br>
 </figure>
 
 <figure>
@@ -98,7 +97,7 @@ The collective correlation values for all stocks will be visually displayed usin
   </p>
   <p align="center">
     Figure 2.2 - Tkinter display for two stocks with medium correlation
-  </p>
+  </p><br>
 </figure>
 
 <figure>
@@ -107,7 +106,7 @@ The collective correlation values for all stocks will be visually displayed usin
   </p>
   <p align="center">
     Figure 2.3 - Tkinter display for two stocks with low correlation
-  </p>
+  </p><br>
 </figure>
 
 ##Reference
