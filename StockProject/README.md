@@ -72,7 +72,7 @@ The correlation value between two words ($sim(w_1, w_2)$) will be computed with 
 A visual display of the individual relations of keywords for two stocks can be seen below in Figure 1.
 
 <figure>
-  <img src="StockProjectMain/Images/graph_ex.png">
+  <img src="Images/graph_ex.png">
   <figcaption>
   Figure 1 - 3D bar graph plotting the 10 keywords for each stock on the $x, y$ axes and the correlation score on the $z$ axis 
   </figcaption>
