@@ -89,6 +89,7 @@ The collective correlation values for all stocks will be visually displayed usin
   <p align="center">
     Figure 2.1 - Tkinter display for two stocks with high correlation
   </p>
+  <br><br>
 </figure>
 
 <figure>
