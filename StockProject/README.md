@@ -67,7 +67,7 @@ Comparing every word in $S_1$ with every word in $S_2$ yields a correlation valu
 
 $$R_{i,j} = \sum(sim(w_a, w_b) \times \frac{1}{0.25})^2 \quad (\forall w_a \in S_i,\ \forall w_b \in S_j)$$
 
-The correlation value between two words ($sim(w_1, w_2)$) will be computed with the library Spacy, using the vector space model "en_vectors_web_lg".
+The correlation value between two words ( $sim(w_1, w_2)$ ) will be computed with the library Spacy, using the vector space model "en_vectors_web_lg".
 
 A visual display of the individual relations of keywords for two stocks can be seen below in Figure 1.
 
