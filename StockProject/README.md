@@ -72,7 +72,9 @@ The correlation value between two words ($sim(w_1, w_2)$) will be computed with 
 A visual display of the individual relations of keywords for two stocks can be seen below in Figure 1.
 
 <figure>
-  <img src="Images/graph_ex.png">
+  <p align="center">
+    <img src="Images/graph_ex.png">
+  </p>
   <figcaption>
   Figure 1 - 3D bar graph plotting the 10 keywords for each stock on the $$x, y$$ axes and the correlation score on the $$z$$ axis 
   </figcaption>
@@ -81,9 +83,7 @@ A visual display of the individual relations of keywords for two stocks can be s
 The collective correlation values for all stocks will be visually displayed using Tkinter, with the GUI window split in half. The left half will display a graph of stocks as nodes and relations as edges, colored with green/red based on the stocks' correlation values. Selecting two stocks will update the right half, displaying a 3d bar graph of keyword relations similar to Figure 1. Such examples are displayed below in Figure 2.1 ~ 2.3. 
 
 <figure>
-  <p align="center:">
   <img src="Images/green_ex.png">
-  </p>
   <figcaption>
   Figure 2.1 - Tkinter display for two stocks with high correlation
   </figcaption>
